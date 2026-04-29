@@ -3,8 +3,6 @@
 **A Hybrid Anomaly Detection and Linear Mixed Model Approach**  
 Chepkirui M et al. — *BMC Medical Informatics and Decision Making* (under review)
 
-KEMRI Centre for Global Health Research, Kisumu, Kenya &  
-Liverpool School of Tropical Medicine, Liverpool, United Kingdom
 
 ---
 
