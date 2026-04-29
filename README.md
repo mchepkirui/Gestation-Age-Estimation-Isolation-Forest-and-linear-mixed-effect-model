@@ -189,9 +189,8 @@ In R notation: `GA_birth ~ GA_method + birth_outcome + (1 | pregnancy_id)`
 
 | File | Description |
 |------|-------------|
-| `new_cdate_march2026.rds` | Per-pregnancy best-GA predictions and consensus conception dates |
-| `conception_model_example_P.jpg` | Shrinkage visualisation — manuscript Figure 2 (300 dpi JPEG) |
-| `conception_model_example_P.pdf` | Shrinkage visualisation — vector PDF |
+| `calibrated_cdate_data.rds` | Per-pregnancy best-GA predictions and consensus conception dates |
+
 
 ---
 
