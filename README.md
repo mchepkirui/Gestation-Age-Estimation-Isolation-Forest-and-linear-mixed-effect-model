@@ -35,7 +35,7 @@ Raw multi-register linked data (MiMBa Registry)
         │
         ▼
 00_data_consolidation.R
-  └─ Outcome filtering & WHO-threshold reclassification
+  └─ Outcome filtering 
   └─ Wide-to-long reshape (1 row per pregnancy × method)
   └─ Physiological plausibility bounds per outcome
   └─ Feature engineering (ga_edd, ga_del, ga_zscore, ga_deviation, z_gestation)
@@ -157,9 +157,7 @@ python 01_anomaly_detection_isolation_forest.py
 | `clean_data_for_bayesian.csv` | Anomaly-free records — **input to Stage 2** |
 | `anomalies_for_review.csv` | Flagged records sorted by anomaly score for clinical review |
 | `anomaly_detection_summary.csv` | Per-outcome model performance |
-| `table1_model_performance.csv` | Manuscript Table 1 |
-| `table2_feature_importance.csv` | Manuscript Table 2 |
-| `feature_ranking_table.tex` | LaTeX dual-method feature ranking table |
+
 
 ---
 
@@ -214,7 +212,7 @@ Ochieng T, Kariuki S, Oneko M, Barsosio H, ter Kuile F, Taegtmeyer M,
 Lesosky M. Inferring Optimised Pregnancy Conception Dates from Multiple
 Gestational Age Estimates: A Hybrid Anomaly Detection and Linear Mixed Model
 Approach. BMC Medical Informatics and Decision Making (under review). 2026.
-GitHub: https://github.com/[your-handle]/mimba-ga-estimation
+GitHub: https://github.com/mchepkirui/Gestation-Age-Estimation-Isolation-Forest-and-linear-mixed-effect-model
 ```
 
 ---
