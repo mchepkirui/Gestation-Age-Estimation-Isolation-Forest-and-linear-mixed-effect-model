@@ -124,6 +124,10 @@ seaborn
 
 ### Stage 0 — Data Consolidation
 
+```bash
+Rscript 00_data_consolidation.R
+```
+
 ### Stage 1 — Anomaly Detection
 
 Update `INPUT_FILE` at the top of the script, then run:
