@@ -56,8 +56,7 @@ clean_data_for_lmm.csv
 02_lmm_ga_estimation.R
   └─ LMM: GA_birth ~ GA_method + birth_outcome + (1 | pregnancy_id)
   └─ BLUP-derived best-GA prediction anchored to US1
-  └─ Bland-Altman bias assessment by method
-  └─ Shrinkage visualisation (Figure 2 in manuscript)
+  └─ Bias assessment by method
         │
         ▼
 Calibrated conception date per pregnancy (calibrated_cdate_data.rds)
@@ -80,7 +79,7 @@ mimba-ga-estimation/
     └── .gitkeep                                # generated outputs gitignored
 ```
 
-> **Note:** No patient data are included in this repository. The MiMBa Registry data are held under institutional data governance agreements at KEMRI. Researchers wishing to replicate this analysis should contact the corresponding author regarding data access.
+> **Note:** No patient data are included in this repository. The MiMBa Registry data are held under institutional data governance agreements at KEMRI-LSTM. Researchers wishing to replicate this analysis should contact the corresponding author regarding data access.
 
 ---
 
@@ -152,7 +151,7 @@ python 01_anomaly_detection_isolation_forest.py
 | File | Description |
 |------|-------------|
 | `all_data_with_anomaly_flags.csv` | All records with `is_anomaly` and `anomaly_score` columns added |
-| `clean_data_for_bayesian.csv` | Anomaly-free records — **input to Stage 2** |
+| `clean_data_for_lmm.csv` | Anomaly-free records — **input to Stage 2** |
 | `anomalies_for_review.csv` | Flagged records sorted by anomaly score for clinical review |
 | `anomaly_detection_summary.csv` | Per-outcome model performance |
 
